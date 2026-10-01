@@ -24,7 +24,7 @@ always @(posedge clk or negedge rstn) begin
         case (state)
             IDLE: begin
                 if (en) begin
-//                    q_avg <= 0;
+                    q_avg <= 0;
                     mem <= 0;
                     count <= 0;
                     state <= COUNT;
